@@ -4,9 +4,6 @@ import pandas as pd
 import requests
 from PIL import Image
 
-pickle.dump(new_df,open('movies.pkl', 'wb'))
-pickle.dump(new_df.to_dict(),open('movie_dict.pkl', 'wb'))
-pickle.dump(similarity,open('similarity.pkl', 'wb'))
 
 def fetch_posters(movie_id):
     response = requests.get(
